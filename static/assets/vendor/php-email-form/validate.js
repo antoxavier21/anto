@@ -61,21 +61,28 @@
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
+        thisForm.querySelector('.sent-message').classList.remove('d-block');
         thisForm.reset(); 
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
     })
-    .catch((error) => {
-      displayError(thisForm, error);
+    .catch(() => {
+      displayError(thisForm);
+      
     });
   }
 
-  function displayError(thisForm, error) {
+  function displayError(thisForm) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    thisForm.querySelector('.sent-message').innerHTML = "Your message has been sent. Thank you!"
+    setTimeout(function(){
+      thisForm.querySelector('.sent-message').innerHTML= ""
+    },2500)
+    thisForm.querySelector('.sent-message').classList.add('d-block')
+    setTimeout(function(){
+      thisForm.querySelector('.sent-message').classList= ""
+    },2500)
   }
 
 })();

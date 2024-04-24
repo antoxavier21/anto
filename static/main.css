@@ -1,36 +1,21 @@
-/**
-* Template Name: UpConstruction - v1.3.0
-* Template URL: https://bootstrapmade.com/upconstruction-bootstrap-construction-website-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Set main reusable colors and fonts using CSS variables
-# Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
---------------------------------------------------------------*/
-/* Fonts */
 :root {
   --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Roboto", sans-serif;
   --font-secondary: "Work Sans", sans-serif;
 }
 
-/* Colors */
 :root {
   --color-default: #364d59;
   --color-primary: #feb900;
   --color-secondary: #52565e;
 }
 
-/* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
 body {
   font-family: var(--font-default);
   color: var(--color-default);
@@ -56,9 +41,6 @@ h6 {
   font-family: var(--font-primary);
 }
 
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
 section {
   padding: 80px 0;
   overflow: hidden;
@@ -107,9 +89,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
 .breadcrumbs {
   padding: 140px 0 60px 0;
   min-height: 30vh;
@@ -164,9 +143,6 @@ section {
   content: "/";
 }
 
-/*--------------------------------------------------------------
-# Scroll top button
---------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -197,9 +173,6 @@ section {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
 #preloader {
   position: fixed;
   inset: 0;
@@ -243,18 +216,13 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
+
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 .header {
   z-index: 997;
   position: absolute;
@@ -281,9 +249,7 @@ section {
   color: var(--color-primary);
 }
 
-/*--------------------------------------------------------------
-# Desktop Navigation
---------------------------------------------------------------*/
+
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -431,9 +397,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Mobile Navigation
---------------------------------------------------------------*/
 @media (max-width: 1279px) {
   .navbar {
     position: fixed;
@@ -541,9 +504,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Get Started Section
---------------------------------------------------------------*/
 .get-started .content {
   padding: 30px 0;
 }
@@ -691,9 +651,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Constructions Section
---------------------------------------------------------------*/
 .constructions .card-item {
   border: 1px solid rgba(82, 86, 94, 0.2);
   background: #fff;
@@ -724,9 +681,6 @@ section {
   margin: 0;
 }
 
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
 .services .service-item {
   padding: 40px;
   background: #fff;
@@ -794,9 +748,6 @@ section {
   border-color: var(--color-primary);
 }
 
-/*--------------------------------------------------------------
-# Features Section
---------------------------------------------------------------*/
 .features .nav-tabs {
   border: 0;
 }
@@ -884,9 +835,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Our Projects Section
---------------------------------------------------------------*/
 .projects .portfolio-flters {
   padding: 0;
   margin: 0 auto 20px auto;
@@ -996,9 +944,6 @@ section {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
   padding-left: 50px;
 }
@@ -1111,9 +1056,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Alt Services Section
---------------------------------------------------------------*/
 .alt-services .img-bg {
   background-size: cover;
   background-position: center center;
@@ -1186,9 +1128,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
 .about h2 {
   font-size: 48px;
   font-weight: 700;
@@ -1280,9 +1219,7 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Stats Counter Section
---------------------------------------------------------------*/
+
 .stats-counter .stats-item {
   background: #fff;
   box-shadow: 0px 0 30px rgba(82, 86, 94, 0.05);
@@ -1310,9 +1247,6 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Our Team Section
---------------------------------------------------------------*/
 .team .member {
   position: relative;
 }
@@ -1390,9 +1324,6 @@ section {
   opacity: 1;
 }
 
-/*--------------------------------------------------------------
-# Servie Cards Section
---------------------------------------------------------------*/
 .services-cards h3 {
   font-size: 20px;
   font-weight: 700;
@@ -1416,9 +1347,6 @@ section {
   margin-right: 6px;
 }
 
-/*--------------------------------------------------------------
-# Projet Details Section
---------------------------------------------------------------*/
 .project-details .portfolio-details-slider img {
   width: 100%;
 }
@@ -1584,9 +1512,6 @@ section {
   padding: 0;
 }
 
-/*--------------------------------------------------------------
-# Service Details Section
---------------------------------------------------------------*/
 .service-details .services-list {
   padding: 10px 30px;
   border: 1px solid #d5d7da;
@@ -1648,9 +1573,6 @@ section {
   color: var(--color-primary);
 }
 
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
 .contact .info-item {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
   padding: 20px 0 30px 0;
@@ -1769,6 +1691,16 @@ section {
   background: rgba(254, 185, 0, 0.8);
 }
 
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1779,9 +1711,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Recent Blog Posts Section
---------------------------------------------------------------*/
 .recent-blog-posts .post-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
@@ -1854,9 +1783,6 @@ section {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Hero Section
---------------------------------------------------------------*/
 .hero {
   overflow-x: hidden;
   padding: 0;
@@ -2002,9 +1928,6 @@ section {
   opacity: 0.9;
 }
 
-/*--------------------------------------------------------------
-# Blog
---------------------------------------------------------------*/
 .blog .blog-pagination {
   margin-top: 30px;
   color: #838893;
@@ -2041,9 +1964,6 @@ section {
   color: var(--color-white);
 }
 
-/*--------------------------------------------------------------
-# Blog Posts List
---------------------------------------------------------------*/
 .blog .posts-list .post-item {
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
@@ -2120,9 +2040,6 @@ section {
   transform: scale(1.1);
 }
 
-/*--------------------------------------------------------------
-# Blog Details
---------------------------------------------------------------*/
 .blog .blog-details {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -2307,9 +2224,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Blog Sidebar
---------------------------------------------------------------*/
 .blog .sidebar {
   padding: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -2463,9 +2377,6 @@ section {
   font-size: 14px;
 }
 
-/*--------------------------------------------------------------
-# Blog Comments
---------------------------------------------------------------*/
 .blog .comments {
   margin-top: 30px;
 }
@@ -2575,9 +2486,6 @@ section {
   background-color: var(--color-primary);
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 .footer {
   color: #fff;
   background: url("../img/footer-bg.jpg") top center no-repeat;
